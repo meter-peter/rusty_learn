@@ -9,9 +9,8 @@ pub fn word_tokenize(text: &str) -> Vec<String> {
         .collect()
 }
 
-// Tokenize text into sentences
 pub fn sentence_tokenize(text: &str) -> Vec<String> {
-    UnicodeSegmentation::sentences(text)
+    text.unicode_sentences()
         .map(|sentence| sentence.to_string())
         .collect()
 }
