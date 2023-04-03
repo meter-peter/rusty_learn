@@ -1,2 +1,2 @@
-pub mod nlp;
-
+pub mod ml;
+pub mod vision;
